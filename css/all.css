@@ -318,7 +318,6 @@ h3 {
 /* flex效果 */
 .d-flex {
 	display: flex;
-	flex: 0 0 auto;
 }
 
 .d-flex-col {
