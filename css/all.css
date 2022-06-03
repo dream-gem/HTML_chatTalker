@@ -410,7 +410,7 @@ h3 {
 		background-repeat: no-repeat;
 		/* 174+88 */
 		height: calc(100vh - 174px - 88px);
-		position: sticky;
+		position: static;
 		margin-bottom: 100px;
 	}
 
