@@ -179,6 +179,7 @@ sub{
 .btn_sm:hover{
 	background: #fff;
 	color: #FF5D50;
+	border: 1px solid #FF5D50;
 }
 
 .btn_lg{
@@ -192,6 +193,7 @@ sub{
 .btn_lg:hover{
 	color: #56C4C5;
 	background: #fff;
+	border: 1px solid #56C4C5;
 }
 
 .btn_lg_white{
