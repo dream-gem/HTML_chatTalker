@@ -397,7 +397,7 @@ h3 {
 /* home Background */
 .bg_yellow {
 	/* 放在wrap */
-	background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg") 80% 50px, url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg") 100% 0;
+	background: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home.svg") 80% 50px, url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/bg_home.svg") 100% 0;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
@@ -410,7 +410,7 @@ h3 {
 
 .ball1 {
 	/* 放在SNS */
-	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball01.svg");
 	width: 138px;
 	height: 360px;
 	background-position: right;
@@ -422,7 +422,7 @@ h3 {
 
 .ball2 {
 	/* 放在character */
-	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg");
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball02.svg");
 	width: 210px;
 	height: 360px;
 	background-size: cover;
@@ -435,7 +435,7 @@ h3 {
 
 .ball3 {
 	/* 放在comment */
-	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball03.svg");
 	width: 150px;
 	height: 150px;
 	background-repeat: no-repeat;
@@ -446,7 +446,7 @@ h3 {
 
 @media (max-width:768px) {
 	.bg_yellow {
-		background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg") center, url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg") center;
+		background: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home.svg") center, url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/bg_home_sm.svg") center;
 		background-repeat: no-repeat;
 		/* 174+88 */
 		height: calc(100vh - 174px - 88px);
@@ -549,7 +549,7 @@ header {
 }
 
 .home_footer {
-	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home_footer.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -611,7 +611,7 @@ footer {
 .page_background{
 	/* 放在wrap */
 	/* background-color: #F7F9FD; */
-	background: #F7F9FD url("/images/banner.svg") 100% 0 / contain;
+	background: #F7F9FD url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/banner.svg") 100% 0 / contain;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 470px;
@@ -623,14 +623,14 @@ footer {
 }
 @media (max-width:768px){
 	.page_background{
-		background: #F7F9FD url("/images/banner_sm.svg") 100% 100% / cover;
+		background: #F7F9FD url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/banner_sm.svg") 100% 100% / cover;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 495px;
 	}
 }
 .check{
-	list-style-image:url("/images/icon_check.svg");
+	list-style-image:url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/icon_check.svg");
 	list-style-position: inside;
 }
 
