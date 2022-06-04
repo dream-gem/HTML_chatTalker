@@ -1,0 +1,662 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全站設定 */
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	/* outline: 1px solid #000; */
+}
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+sub{
+	vertical-align: sub;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+/* 基本按鈕設定 */
+.btn_sm {
+	display: inline-block;
+	border-radius: 22px;
+	color: #fff;
+	background: #FF5D50;
+	padding: 8px 32px;
+}
+.btn_sm:hover{
+	background: #fff;
+	color: #FF5D50;
+	border: 1px solid #FF5D50;
+}
+
+.btn_lg{
+	display: inline-block;
+	border-radius: 27px;
+	padding: 16px 32px;
+	color: #fff;
+	background: #56C4C5;
+	font-size: 18px;
+}
+.btn_lg:hover{
+	color: #56C4C5;
+	background: #fff;
+	border: 1px solid #56C4C5;
+}
+
+.btn_lg_white{
+	display: inline-block;
+	border-radius: 27px;
+	padding: 16px 32px;
+	color: #56C4C5;
+	background: #fff;
+	border: 1px solid #56C4C5;
+	font-size: 18px;
+}
+.btn_lg_white:hover{
+	color: #fff;
+	background: #56C4C5;
+}
+/* 文字設定 */
+h1 {
+	/* font-size: 48px; */
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+h2 {
+	/* font-size: 32px; */
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+h3 {
+	/* font-size: 24px; */
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* 粗體 */
+.font_bold {
+	font-weight: bold;
+}
+
+/* 藍字 */
+.blue_text {
+	color: #56C4C5;
+}
+
+/* 副標題 */
+.subtitle {
+	/* font-size: 20px; */
+	font-size: 1.25rem;
+}
+
+.sub_desc,
+.item_title {
+	font-size: 18px;
+}
+.sm_text{
+	font-size: 12px;
+}
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+	}
+
+	.sub_desc {
+		font-size: 16px;
+	}
+}
+
+/* 字體置中 */
+.text_center {
+	text-align: center;
+}
+
+.text_left{
+	text-align: left;
+}
+
+/* 字體 */
+.font-family-comfortaa{
+	font-family: 'Comfortaa', cursive;
+}
+/* 分隔線 */
+.divider {
+	border: 1px solid #DDDDDD;
+}
+
+/* 圓形 */
+.circle {
+	border-radius: 50%;
+}
+
+/* 圓弧效果陰影 */
+.box_shadow_1 {
+	box-shadow: 0px 2px 10px #00000014;
+}
+
+/* 圓盒子 */
+.circle_box {
+	border-radius: 50%;
+	width: 86px;
+	height: 86px;
+	margin: 1rem;
+}
+.square_box{
+	background: #F5F5F5;
+	border-radius: 12px;
+}
+.border-radius12{
+	border-radius: 12px;
+}
+.width50 {
+	width: 50%;
+}
+.width45{
+	width: 45%;
+}
+.width24 {
+	width: 24%;
+}
+
+/* margin: 1rem 16px; */
+.mt1 {
+	margin-top: 1rem;
+}
+
+.mb1 {
+	margin-bottom: 1rem;
+}
+
+.mb2 {
+	margin-bottom: 2rem;
+}
+
+.mt24 {
+	margin-top: 1.5rem;
+}
+
+.mb24 {
+	margin-bottom: 1.5rem;
+}
+
+.mb3 {
+	margin-bottom: 3rem;
+}
+
+.mb100 {
+	margin-bottom: 100px;
+}
+
+
+/* flex效果 */
+.d-flex {
+	display: flex;
+}
+
+.d-flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.d-flex-jcc {
+	justify-content: center;
+}
+
+.d-flex-aic {
+	align-items: center;
+}
+
+.d-flex-jcsb {
+	justify-content: space-between;
+}
+.d-flex-jcsa{
+	justify-content:space-around;
+}
+
+.d-flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+/* home Background */
+.bg_yellow {
+	/* 放在wrap */
+	background: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home.svg") 80% 50px, url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/bg_home.svg") 100% 0;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+
+}
+
+.ball1 {
+	/* 放在SNS */
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball01.svg");
+	width: 138px;
+	height: 360px;
+	background-position: right;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top: -180px;
+	/* top: calc(100vh - 180px);	 */
+}
+
+.ball2 {
+	/* 放在character */
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball02.svg");
+	width: 210px;
+	height: 360px;
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	z-index: -1;
+	right: 0;
+	bottom: -180px;
+}
+
+.ball3 {
+	/* 放在comment */
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/ball03.svg");
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	left: 0;
+	top: 48px;
+}
+
+@media (max-width:768px) {
+	.bg_yellow {
+		background: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home.svg") center, url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/bg_home_sm.svg") center;
+		background-repeat: no-repeat;
+		/* 174+88 */
+		height: calc(100vh - 174px - 88px);
+		position: static;
+		margin-bottom: 100px;
+	}
+
+	.ball1 {
+		top: 0;
+	}
+
+	.ball2 {
+		width: 88px;
+		height: 135px;
+		bottom: 0;
+	}
+
+	.ball3 {
+		width: 77px;
+		height: 153px;
+		background-position: right;
+	}
+}
+
+header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+@media (max-width:768px) {
+	header img {
+		height: 24px;
+	}
+}
+
+.banner {
+	height: calc(100vh - 88px);
+}
+
+@media (max-width:768px) {
+	.banner {
+		display: block;
+		height: auto;
+	}
+}
+
+
+.SNS img {
+	max-width: 90px;
+	max-height: 90px;
+}
+
+
+.character_list li {
+	padding-bottom: 24px;
+	background: #fff;
+}
+
+.character_list li img {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.card {
+	width: 40%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-right: 5%;
+	margin-bottom: 28px;
+}
+
+.comment_list {
+	margin-top: 6.5rem;
+}
+
+.comment_list li {
+	width: 30%;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background: #fff;
+}
+
+@media (max-width:992px) {
+	.comment_list li {
+		width: 90%;
+		margin-bottom: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.comment_list .circle {
+	max-width: 80px;
+	max-height: 80px;
+	top: -3rem;
+}
+
+.home_footer {
+	background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home_footer.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: calc(100vh - 56px);
+	padding-top: calc((100vh - 56px) / 3 * 2);
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	background: #F5F5F5;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.back_to_top {
+	position: fixed;
+	bottom: 23px;
+	right: 48px;
+	z-index: 99;
+}
+
+@media (max-width:768px) {
+	.sm-d-block {
+		display: block;
+	}
+
+	.sm-width80 {
+		width: 80%;
+	}
+
+	.sm-width100 {
+		width: 100%;
+	}
+
+	.sm-mt1 {
+		margin-top: 1rem;
+	}
+
+	.sm-mb1 {
+		margin-top: 1rem;
+	}
+
+	.sm-d-flex-center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sm-margin-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sm-text_center {
+		text-align: center;
+	}
+}
+
+.page_background{
+	/* 放在wrap */
+	/* background-color: #F7F9FD; */
+	background: #F7F9FD url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/banner.svg") 100% 0 / contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 470px;
+	/* background-position: right; */
+	border-bottom-left-radius: 300px;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+@media (max-width:768px){
+	.page_background{
+		background: #F7F9FD url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/banner_sm.svg") 100% 100% / cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 495px;
+	}
+}
+.check{
+	list-style-image:url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/icon_check.svg");
+	list-style-position: inside;
+}
+
+.plan,.FAQ{
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-right:  auto;
+	margin-left: auto;
+
+}
+.paln_content{
+	margin-top: 54px;
+	gap: 2%;
+}
+
+.calculate .font-family-comfortaa{
+	font-size: 32px;
+}
+
+.member,.cost{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	width: 40%;
+}
+.FAQ li{
+	padding: 16px 32px;
+}
