@@ -446,7 +446,7 @@ h3 {
 	top: 48px;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 	.bg_yellow {
 		background: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/home.svg") center, url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/bg_home_sm.svg") center;
 		background-repeat: no-repeat;
@@ -478,7 +478,7 @@ header {
 	padding-bottom: 24px;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 	header img {
 		height: 24px;
 	}
@@ -488,7 +488,7 @@ header {
 	height: calc(100vh - 88px);
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 	.banner {
 		display: block;
 		height: auto;
@@ -556,10 +556,21 @@ header {
 	background-position: center;
 	background-size: cover;
 	height: calc(100vh - 56px);
-	padding-top: calc((100vh - 56px) / 3 * 2);
-	text-align: center;
+	/* padding-top: calc((100vh - 56px) / 3 * 2); */
+	justify-content: end;
+	padding-bottom: 10vh;
 }
-
+@media (max-width:767px){
+	.home_footer {
+		background-image: url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/footer_sm.svg");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: contain;
+	}
+	.home_footer h2{
+		font-size: 24px;
+	}
+}
 footer {
 	text-align: center;
 	background: #F5F5F5;
@@ -574,7 +585,7 @@ footer {
 	z-index: 99;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 	.sm-d-block {
 		display: block;
 	}
@@ -623,7 +634,7 @@ footer {
 	right: 0;
 	z-index: -1;
 }
-@media (max-width:768px){
+@media (max-width:767px){
 	.page_background{
 		background: #F7F9FD url("https://raw.githubusercontent.com/dream-gem/HTML_chatTalker/main/images/banner_sm.svg") 100% 100% / cover;
 		background-repeat: no-repeat;
@@ -647,7 +658,10 @@ footer {
 	margin-top: 54px;
 	gap: 2%;
 }
-
+.paln_content li{
+	padding-right: 16px;
+	padding-left: 16px;
+}
 .calculate .font-family-comfortaa{
 	font-size: 32px;
 }
