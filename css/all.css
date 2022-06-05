@@ -501,15 +501,13 @@ header {
 	max-height: 90px;
 }
 
-
-.character_list li {
-	padding-bottom: 24px;
+.character li{
 	background: #fff;
 }
 
-.character_list li img {
-	border-top-left-radius: 12px;
+.character li img{
 	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
 }
 
 .card {
