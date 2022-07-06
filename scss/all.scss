@@ -1,0 +1,494 @@
+@import "reset";
+@import "base";
+@import "background";
+
+
+
+// 按鈕設定
+.btn_sm {
+    display: inline-block;
+    color: white;
+    background: #FF5D50;
+    border-radius: 22px;
+    padding: 8px 32px;
+
+    &:hover {
+        border: 1px solid white;
+        background: #ff8800;
+    }
+}
+
+.btn_lg {
+    display: inline-block;
+    color: white;
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+    font-size: 18px;
+
+    &:hover {
+        color: #747474;
+        background: #6ae6bcb9;
+    }
+}
+
+.btn_lg_white {
+    display: inline-block;
+    color: #56C4C5;
+    background: #fff;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+    font-size: 18px;
+
+    &:hover {
+        color: white;
+        background: #56C4C5;
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 23px;
+    right: 48px;
+    z-index: 99;
+}
+
+
+.text_center {
+    text-align: center;
+}
+
+.text_left {
+    text-align-last: left;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+//圓盒子
+.circle_box86 {
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+}
+
+.square_box {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+// 整體圓弧12px設定
+.radius12 {
+    border-radius: 12px;
+}
+
+// 上圓弧12設定
+.radius12_top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+// 圓弧陰影
+.shadow_gray {
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+// flex設定
+.d_flex {
+    display: flex;
+}
+
+.d_flex_col {
+    flex-direction: column;
+}
+
+.d_flex_jce {
+    justify-content: end;
+}
+
+.d_flex_jcsb {
+    justify-content: space-between;
+}
+
+.d_flex_jcc {
+    justify-content: center;
+}
+
+.d_flex_jcsa {
+    justify-content: space-around
+}
+
+.d_flex_aic {
+    align-items: center;
+}
+
+.d_flex_wrap {
+    flex-wrap: wrap;
+}
+
+.d_flex_row_reverse {
+    flex-direction: row-reverse;
+}
+
+// *****文字設定*****
+.blue_text {
+    color: #56C4C5;
+}
+
+.font_bold {
+    font-weight: bold;
+}
+
+.font_family_Comfortaa {
+    font-family: 'Comfortaa', cursive;
+}
+
+// 字體設計以1rem為16px
+//18px
+.fz_plus2 {
+    font-size: calc(1rem + 2px);
+}
+
+//20px
+.fz_plus4 {
+    font-size: calc(1rem + 4px);
+}
+
+// 24px
+.fz_plus8 {
+    font-size: calc(1rem + 8px);
+}
+
+// 32px
+.subtitle {
+    font-size: 2rem;
+}
+
+// 48px
+.fz_3 {
+    font-size: 3rem;
+}
+
+@media (max-width:576px) {
+    .fz_3 {
+        font-size: 32px;
+    }
+
+    .sm_fz_16 {
+        font-size: 16px;
+    }
+
+    .sm_fz_18 {
+        font-size: 18px;
+    }
+    
+    .subtitle {
+        font-size: 28px;
+    }
+}
+
+.divider {
+    border: 1px solid #DDDDDD;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.mb48 {
+    margin-bottom: 48px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.position_relative {
+    position: relative;
+}
+
+// 畫面調整
+.width50 {
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    .sm_width50 {
+        width: 50%;
+    }
+
+    .sm_width100 {
+        width: 100%;
+    }
+}
+
+header {
+
+    // logo img高度設定
+    img {
+        height: 40px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width:576px) {
+    header {
+        background: #fff;
+        border-bottom: 3px solid #FFD153;
+
+        img {
+            height: 24px;
+        }
+    }
+}
+
+.banner {
+    height: calc(100vh - 40px - 48px);
+}
+
+@media (max-width:768px) {
+    .banner {
+        margin-top: 32px;
+        height: auto;
+    }
+}
+
+.SNS {
+    img {
+        height: 90px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: #747474;
+    }
+}
+
+@media (max-width:768px) {
+    .SNS {
+        li {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.character_list {
+    gap: 16px;
+
+    li {
+        width: 260px;
+        background: #fff;
+    }
+}
+
+@media (max-width:768px) {
+    .character_list {
+        flex-wrap: wrap;
+
+        li {
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.card_desc {
+    padding: 32px;
+}
+
+.card {
+    gap: 47px;
+
+    li {
+        width: 230px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .card_desc {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        li {
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.comment_list {
+    li {
+        width: 30%;
+        padding: 48px 32px 24px;
+        background: #fff;
+    }
+
+
+    img {
+        position: absolute;
+        top: -56px;
+        left: 32px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .comment_list li {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+.footer_banner {
+    background: url("../images/home_footer.svg") top center/100%;
+    background-repeat: no-repeat;
+    height: calc(100vh - 56px);
+    padding-top: 40vh;
+}
+
+footer {
+    background: #F5F5F5;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+// 方案費用
+
+.page_background {
+    background: #F7F9FD url("../images/banner.svg") 100% 0 / contain;
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 100%;
+    border-bottom-left-radius: 300px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width:576px) {
+    .page_background {
+        background: #F7F9FD url("../images/banner_sm.svg") 100% 100% / cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: calc(100vh - 75px);
+        top:75px;
+    }
+
+    .page_banner {
+        height: calc(100vh - 75px);
+    }
+}
+
+.plan_main {
+    display: grid;
+    grid-gap: 21px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 54px;
+
+    .plan_main_list {
+        padding-top: 10px;
+        background-color: #FFFFFF;
+    }
+}
+
+@media (max-width:768px) {
+    .plan_main {
+        grid-template-columns: 1fr;
+    }
+}
+
+// 訂閱
+.subscription {
+    font-size: 12px;
+
+    .font_family_Comfortaa {
+        font-size: 32px;
+    }
+}
+@media (max-width:768px) {
+    .subscription {
+    
+        .font_family_Comfortaa {
+            font-size: 28px;
+        }
+    }
+}
+// 方案內容的li符號
+.check {
+    list-style-image: url("../images/icon_check.svg");
+    list-style-position: inside;
+}
+
+.convert_symbol {
+    font-size: 29px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+@media (max-width:768px) {
+    .convert_symbol {
+        font-size: 24px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
+
+.plan_main_desc {
+    padding-left: 29px;
+}
+@media (max-width:768px) {
+    .plan_main_desc {
+        padding-left: 16px;
+        font-size: 14px;
+    }
+}
+
+.FAQ {
+    .question {
+        padding: 16px 32px;
+        &:hover{
+            color: #56C4C5;
+        }
+    }
+    .active{
+        color: #56C4C5;
+    }
+}
+
+
+.FAQ {
+    .answer {
+        display: none;
+        padding: 16px 32px;
+        color: #747474;
+    }
+}
